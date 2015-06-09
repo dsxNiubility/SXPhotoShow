@@ -48,15 +48,6 @@ static NSString *const ID = @"image";
     self.collectionView = collectionView;
 }
 
-//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//    if ([self.collectionView.collectionViewLayout isKindOfClass:[SXStackLayout class]]) {
-//        [self.collectionView setCollectionViewLayout:[[SXCircleLayout alloc] init] animated:YES];
-//    } else {
-//        [self.collectionView setCollectionViewLayout:[[SXStackLayout alloc] init] animated:YES];
-//    }
-//}
-
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {

@@ -47,6 +47,7 @@ static NSString *const ID = @"image";
     self.collectionView = collectionView;
 }
 
+// ------这里是想尝试在点击时切换layout布局样式 但是没有成功。
 //- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 //{
 //    if ([self.collectionView.collectionViewLayout isKindOfClass:[SXStackLayout class]]) {
