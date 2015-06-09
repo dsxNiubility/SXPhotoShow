@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  SXVC.m
 //  108 - 特殊布局
 //
 //  Created by 董 尚先 on 15/3/20.
 //  Copyright (c) 2015年 shangxianDante. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "SXStackLayout.h"
+#import "SXCircleViewController.h"
+#import "SXCircleLayout.h"
 #import "SXImageCell.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface SXCircleViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 /** 所有的图片名 */
 @property (nonatomic, strong) NSMutableArray *images;
 @property (nonatomic, weak) UICollectionView *collectionView;
 @end
 
-@implementation ViewController
+@implementation SXCircleViewController
 
 static NSString *const ID = @"image";
 
@@ -36,17 +36,26 @@ static NSString *const ID = @"image";
     [super viewDidLoad];
     
     // 创建布局
-    SXStackLayout *layout = [[SXStackLayout alloc] init];
+    SXCircleLayout *layout = [[SXCircleLayout alloc] init];
     
     // 创建collectionView
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200) collectionViewLayout:layout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 235) collectionViewLayout:layout];
     collectionView.dataSource = self;
     collectionView.delegate = self;
-    collectionView.backgroundColor = [UIColor clearColor];
     [collectionView registerNib:[UINib nibWithNibName:@"SXImageCell" bundle:nil] forCellWithReuseIdentifier:ID];
     [self.view addSubview:collectionView];
     self.collectionView = collectionView;
 }
+
+// ------这里是想尝试在点击时切换layout布局样式 但是没有成功。
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    if ([self.collectionView.collectionViewLayout isKindOfClass:[SXStackLayout class]]) {
+//        [self.collectionView setCollectionViewLayout:[[SXCircleLayout alloc] init] animated:YES];
+//    } else {
+//        [self.collectionView setCollectionViewLayout:[[SXStackLayout alloc] init] animated:YES];
+//    }
+//}
 
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section

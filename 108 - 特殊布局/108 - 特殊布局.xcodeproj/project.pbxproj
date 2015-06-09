@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D21A7281ABC3C3000D4B18A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A7271ABC3C3000D4B18A /* main.m */; };
 		1D21A72B1ABC3C3000D4B18A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A72A1ABC3C3000D4B18A /* AppDelegate.m */; };
-		1D21A72E1ABC3C3000D4B18A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A72D1ABC3C3000D4B18A /* ViewController.m */; };
+		1D21A72E1ABC3C3000D4B18A /* SXStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A72D1ABC3C3000D4B18A /* SXStackViewController.m */; };
 		1D21A7311ABC3C3000D4B18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D21A72F1ABC3C3000D4B18A /* Main.storyboard */; };
 		1D21A7331ABC3C3000D4B18A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D21A7321ABC3C3000D4B18A /* Images.xcassets */; };
 		1D21A7361ABC3C3000D4B18A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D21A7341ABC3C3000D4B18A /* LaunchScreen.xib */; };
@@ -19,8 +19,8 @@
 		1D21A7541ABC3F1F00D4B18A /* SXStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A7531ABC3F1F00D4B18A /* SXStackLayout.m */; };
 		1D21A7571ABC3F8200D4B18A /* SXImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D21A7561ABC3F8200D4B18A /* SXImageCell.m */; };
 		1D21A7591ABC3FEA00D4B18A /* SXImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D21A7581ABC3FEA00D4B18A /* SXImageCell.xib */; };
-		1D32137D1ABC7026008070B6 /* SXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D32137C1ABC7026008070B6 /* SXViewController.m */; };
-		1D3213801ABC7392008070B6 /* SXVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D32137F1ABC7392008070B6 /* SXVC.m */; };
+		1D32137D1ABC7026008070B6 /* SXLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D32137C1ABC7026008070B6 /* SXLineViewController.m */; };
+		1D3213801ABC7392008070B6 /* SXCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D32137F1ABC7392008070B6 /* SXCircleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,8 @@
 		1D21A7271ABC3C3000D4B18A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D21A7291ABC3C3000D4B18A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D21A72A1ABC3C3000D4B18A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D21A72C1ABC3C3000D4B18A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D21A72D1ABC3C3000D4B18A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1D21A72C1ABC3C3000D4B18A /* SXStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXStackViewController.h; sourceTree = "<group>"; };
+		1D21A72D1ABC3C3000D4B18A /* SXStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXStackViewController.m; sourceTree = "<group>"; };
 		1D21A7301ABC3C3000D4B18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D21A7321ABC3C3000D4B18A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D21A7351ABC3C3000D4B18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,10 +56,10 @@
 		1D21A7551ABC3F8200D4B18A /* SXImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXImageCell.h; sourceTree = "<group>"; };
 		1D21A7561ABC3F8200D4B18A /* SXImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXImageCell.m; sourceTree = "<group>"; };
 		1D21A7581ABC3FEA00D4B18A /* SXImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXImageCell.xib; sourceTree = "<group>"; };
-		1D32137B1ABC7026008070B6 /* SXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXViewController.h; sourceTree = "<group>"; };
-		1D32137C1ABC7026008070B6 /* SXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXViewController.m; sourceTree = "<group>"; };
-		1D32137E1ABC7392008070B6 /* SXVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXVC.h; sourceTree = "<group>"; };
-		1D32137F1ABC7392008070B6 /* SXVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXVC.m; sourceTree = "<group>"; };
+		1D32137B1ABC7026008070B6 /* SXLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLineViewController.h; sourceTree = "<group>"; };
+		1D32137C1ABC7026008070B6 /* SXLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXLineViewController.m; sourceTree = "<group>"; };
+		1D32137E1ABC7392008070B6 /* SXCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXCircleViewController.h; sourceTree = "<group>"; };
+		1D32137F1ABC7392008070B6 /* SXCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXCircleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +104,12 @@
 				1D21A74B1ABC3CA500D4B18A /* Layout */,
 				1D21A7291ABC3C3000D4B18A /* AppDelegate.h */,
 				1D21A72A1ABC3C3000D4B18A /* AppDelegate.m */,
-				1D21A72C1ABC3C3000D4B18A /* ViewController.h */,
-				1D21A72D1ABC3C3000D4B18A /* ViewController.m */,
-				1D32137B1ABC7026008070B6 /* SXViewController.h */,
-				1D32137C1ABC7026008070B6 /* SXViewController.m */,
-				1D32137E1ABC7392008070B6 /* SXVC.h */,
-				1D32137F1ABC7392008070B6 /* SXVC.m */,
+				1D21A72C1ABC3C3000D4B18A /* SXStackViewController.h */,
+				1D21A72D1ABC3C3000D4B18A /* SXStackViewController.m */,
+				1D32137B1ABC7026008070B6 /* SXLineViewController.h */,
+				1D32137C1ABC7026008070B6 /* SXLineViewController.m */,
+				1D32137E1ABC7392008070B6 /* SXCircleViewController.h */,
+				1D32137F1ABC7392008070B6 /* SXCircleViewController.m */,
 				1D21A7551ABC3F8200D4B18A /* SXImageCell.h */,
 				1D21A7561ABC3F8200D4B18A /* SXImageCell.m */,
 				1D21A7581ABC3FEA00D4B18A /* SXImageCell.xib */,
@@ -262,15 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D21A72E1ABC3C3000D4B18A /* ViewController.m in Sources */,
+				1D21A72E1ABC3C3000D4B18A /* SXStackViewController.m in Sources */,
 				1D21A7511ABC3EAF00D4B18A /* SXCircleLayout.m in Sources */,
 				1D21A72B1ABC3C3000D4B18A /* AppDelegate.m in Sources */,
 				1D21A7541ABC3F1F00D4B18A /* SXStackLayout.m in Sources */,
 				1D21A74E1ABC3E7100D4B18A /* SXLineLayout.m in Sources */,
-				1D3213801ABC7392008070B6 /* SXVC.m in Sources */,
+				1D3213801ABC7392008070B6 /* SXCircleViewController.m in Sources */,
 				1D21A7571ABC3F8200D4B18A /* SXImageCell.m in Sources */,
 				1D21A7281ABC3C3000D4B18A /* main.m in Sources */,
-				1D32137D1ABC7026008070B6 /* SXViewController.m in Sources */,
+				1D32137D1ABC7026008070B6 /* SXLineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stack View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SXStackViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="280.5" y="217.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Line View Controller-->
         <scene sceneID="gL3-lP-uPM">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="g1j-bB-bNv" customClass="SXViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="g1j-bB-bNv" customClass="SXLineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ucg-Nc-2jQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ks6-Va-ygY"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1088" y="442"/>
         </scene>
-        <!--SXVC-->
+        <!--Circle View Controller-->
         <scene sceneID="xHD-TX-Arl">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FJh-CM-rOf" customClass="SXVC" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FJh-CM-rOf" customClass="SXCircleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CLs-Bf-yYr"/>
                         <viewControllerLayoutGuide type="bottom" id="jrs-zp-Xok"/>

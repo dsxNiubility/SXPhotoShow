@@ -1,5 +1,5 @@
 //
-//  SXViewController.h
+//  SXVC.h
 //  108 - 特殊布局
 //
 //  Created by 董 尚先 on 15/3/20.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SXViewController : UIViewController
+@interface SXCircleViewController : UIViewController
 
 @end
