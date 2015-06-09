@@ -9,9 +9,7 @@
 #import "SXLineLayout.h"
 
 @implementation SXLineLayout
-/**
- * 最好别在init方法中初始化
- */
+
 - (instancetype)init
 {
     if (self = [super init]) {
@@ -40,9 +38,7 @@
 }
 
 /**
- * 返回collectionView上面所有元素（比如cell）的布局属性:这个方法决定了cell怎么排布
- * 每个cell都有自己对应的布局属性：UICollectionViewLayoutAttributes
- * 要求返回的数组中装着UICollectionViewLayoutAttributes对象
+ * 决定了cell怎么排布
  */
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
