@@ -7,9 +7,7 @@
 //
 
 #import "SXVC.h"
-#import "SXLineLayout.h"
 #import "SXCircleLayout.h"
-#import "SXStackLayout.h"
 #import "SXImageCell.h"
 
 @interface SXVC () <UICollectionViewDataSource, UICollectionViewDelegate>

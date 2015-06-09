@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "SXLineLayout.h"
-#import "SXCircleLayout.h"
 #import "SXStackLayout.h"
 #import "SXImageCell.h"
 
