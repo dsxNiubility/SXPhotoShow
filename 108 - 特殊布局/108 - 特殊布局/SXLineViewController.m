@@ -10,7 +10,7 @@
 #import "SXLineLayout.h"
 #import "SXImageCell.h"
 
-@interface SXLineViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface SXLineViewController () <UICollectionViewDataSource, UICollectionViewDelegate,UIScrollViewDelegate>
 /** 所有的图片名 */
 @property (nonatomic, strong) NSMutableArray *images;
 @property (nonatomic, weak) UICollectionView *collectionView;
@@ -63,15 +63,15 @@ static NSString *const ID = @"image";
 #pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // 删除图片名
-    [self.images removeObjectAtIndex:indexPath.item];
-    
-    // 刷新数据
-    //    [self.collectionView reloadData];
-    
-    // 直接将cell删除
-    [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
+
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//    NSInteger index = (scrollView.contentOffset.x  + self.collectionView.frame.size.width * 0.5) / (self.view.frame.size.width * 0.8 * 0.5) - 1;
+//    NSLog(@"Current Index :  %ld",index);
+//    self.currentIndex = index;
+//}
 
 
 @end
